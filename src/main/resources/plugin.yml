@@ -1,5 +1,9 @@
-name: Scenario
-description: Description of scenario.
+name: TeamInventory
+description: Each team has access to a shared inventory with /teaminventory.
 author: Caleb Bassham
 version: 1.0.0
-main: me.calebbassham.scenariomanager.scenario.ScenarioPlugin
+main: me.calebbassham.scenariomanager.scenario.TeamInventoryPlugin
+
+commands:
+  teaminventory:
+    aliases: [ti]
