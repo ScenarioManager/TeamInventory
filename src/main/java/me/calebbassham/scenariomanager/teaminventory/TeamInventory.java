@@ -39,6 +39,11 @@ public class TeamInventory extends SimpleScenario {
                 return true;
             }
 
+            if (!scenarioManager.getGameProvider().isGameRunning()) {
+                sendMessage(sender, "This command cannot be used right now because no game is running.");
+                return true;
+            }
+
             if (!(sender instanceof Player)) {
                 sendMessage(sender, "Only players can use this command.");
                 return true;
