@@ -18,6 +18,11 @@ public class TeamInventory extends SimpleScenario {
     private CommandExecutor cmd = new Cmd();
 
     @Override
+    public void onScenarioStart() {
+        inventories = new HashMap<>();
+    }
+
+    @Override
     public void onScenarioStop() {
         inventories = null;
     }
@@ -52,8 +57,10 @@ public class TeamInventory extends SimpleScenario {
                 return true;
             }
 
-            Inventory inv = inventories.get(team);
-            if (inv == null) {
+            Inventory inv;
+            if (inventories.containsKey(team)) {
+                inv = inventories.get(team);
+            } else {
                 inv = Bukkit.createInventory(null, 54, getInventoryName(team));
                 inventories.put(team, inv);
             }
