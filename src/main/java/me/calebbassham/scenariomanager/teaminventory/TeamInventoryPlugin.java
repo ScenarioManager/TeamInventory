@@ -1,4 +1,4 @@
-package me.calebbassham.scenariomanager.scenario;
+package me.calebbassham.scenariomanager.teaminventory;
 
 import me.calebbassham.scenariomanager.api.ScenarioManagerInstance;
 import org.bukkit.Bukkit;
