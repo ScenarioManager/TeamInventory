@@ -16,6 +16,6 @@ dependencies {
 
 jar {
     from configurations.compile.collect { zipTree it }
-    baseName = "Scenario"
+    baseName = rootProject.name
     archiveName = "${baseName}.${extension}"
 }
