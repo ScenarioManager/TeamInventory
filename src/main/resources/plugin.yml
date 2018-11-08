@@ -2,6 +2,7 @@ name: TeamInventory
 description: Each team has access to a shared inventory with /teaminventory.
 author: Caleb Bassham
 version: 1.0.0
+depend: [ScenarioManager]
 main: me.calebbassham.scenariomanager.teaminventory.TeamInventoryPlugin
 
 commands:
